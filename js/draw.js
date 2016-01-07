@@ -2,6 +2,8 @@
     Draw.js
     Provides drawing functionality. Good luck.
 */
+"use strict";
+
 var rows = 8;
 var columns = 8;
 
@@ -13,7 +15,7 @@ var $square = $('<div />', {
     class: 'square'
 });
 
-$(document).ready(function(){
+$(document).ready(function () {
     // Create a 8 by 8 grid of divs.
     for (var i = 0; i < columns; i++) {
         $row.append($square.clone());
